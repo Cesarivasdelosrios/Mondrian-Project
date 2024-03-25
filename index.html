@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    .contenedor {
+      display:grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 159px 20px ;
+      gap: 9px;
+      border: solid black 3px;
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+    }
+
+    .rojo {
+      background-color: #E72F24
+    }
+    .blanco {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .blanco1 {
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .blanco2 {
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 / 4
+    }
+    .blanco3 {
+      background-color: #F0F1EC;
+      grid-row-start: 4
+    }
+    .blanco4 {
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / 5 / 5;
+    }
+      .amarillo {
+      background-color: #F9D01E;
+      grid-column-start: 2
+    }
+    .azul {
+      background-color: #004592;
+      grid-column-start: 4;
+      grid-row-end: 3;
+      border-bottom: solid 10px;
+    }
+    .negro {
+      background-color: #232629;
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="rojo"></div>
+    <div class="blanco"></div>
+    <div class="blanco1"></div>
+    <div class="blanco2"></div>
+    <div class="blanco3"></div>
+    <div class="blanco4"></div>
+    <div class="amarillo"></div>
+    <div class="negro"></div>
+    <div class="azul"></div>
+  </div>
+</body>
+
+</html>
